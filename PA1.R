@@ -145,4 +145,3 @@ plot <- xyplot(new_activity_day$steps ~ new_activity_day$interval | new_activity
        xlab = "Interval", ylab = "Number of steps")
 
 plot
-
