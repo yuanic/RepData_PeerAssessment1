@@ -16,7 +16,13 @@ stepsday
 
 ```{r}
 histogram <- hist(stepsday$steps,breaks=50,main = "Histogram of Total Steps Per Day (Breaks = 50)", xlab = "Steps per day")
+
 ```
+```{r fig.width=7, fig.height=6} 
+histogram
+```
+
+
 
 #### 3. Calculate and report the mean and median of the total number of steps taken per day.
 
