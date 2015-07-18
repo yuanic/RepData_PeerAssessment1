@@ -1,10 +1,5 @@
----
-title: "Rep Research"
-author: "Yuani"
-date: "19 July 2015"
-output: html_document
----
-
+﻿Reproducible Research Peer Assessment 1
+========================================================
 ## What is the mean total number of steps taken per day?
 
 #### 1. Calculate the total number of steps taken per day.
@@ -150,4 +145,3 @@ plot <- xyplot(new_activity_day$steps ~ new_activity_day$interval | new_activity
        xlab = "Interval", ylab = "Number of steps")
 
 plot
-
