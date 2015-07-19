@@ -20,7 +20,7 @@ histogram <- hist(stepsday$steps,breaks=50,main = "Histogram of Total Steps Per 
 hist(stepsday$steps,breaks=50,main = "Histogram of Total Steps Per Day (Breaks = 50)", xlab = "Steps per day")
 
 ```
-```{r fig.width=7, fig.height=6} 
+```{r echo=FALSE} 
 hist(stepsday$steps,breaks=50,main = "Histogram of Total Steps Per Day (Breaks = 50)", xlab = "Steps per day")
 
 ```
