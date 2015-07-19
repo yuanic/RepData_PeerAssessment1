@@ -19,7 +19,7 @@ histogram <- hist(stepsday$steps,breaks=50,main = "Histogram of Total Steps Per 
 
 ```
 ```{r fig.width=7, fig.height=6} 
-plot(histogram)
+histogram
 ```
 
 
