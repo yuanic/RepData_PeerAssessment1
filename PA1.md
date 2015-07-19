@@ -6,6 +6,8 @@
 
 ```{r}
 activity <- read.csv ("C:\\Users\\ychen06\\Documents\\IDA MOOC\\Git\\RepData_PeerAssessment1\\activity\\activity.csv")
+require(knitr)
+opts_chunk$set(echo = TRUE, cache = TRUE, cache.path = "cache/", fig.path = "figure/")
 library(plyr)
 activity1<-na.omit(activity)
 stepsday<- ddply(activity1,.(date),summarize,steps=sum(steps))
@@ -20,12 +22,6 @@ histogram <- hist(stepsday$steps,breaks=50,main = "Histogram of Total Steps Per 
 hist(stepsday$steps,breaks=50,main = "Histogram of Total Steps Per Day (Breaks = 50)", xlab = "Steps per day")
 
 ```
-```{r echo=FALSE} 
-hist(stepsday$steps,breaks=50,main = "Histogram of Total Steps Per Day (Breaks = 50)", xlab = "Steps per day")
-
-```
-
-
 
 #### 3. Calculate and report the mean and median of the total number of steps taken per day.
 
